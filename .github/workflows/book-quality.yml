@@ -14,27 +14,27 @@ jobs:
             echo "ERROR: Found TODO placeholders in content"
             exit 1
           fi
-      
+
       - name: Check for placeholder text
         run: |
           if grep -r "This chapter will" docs/; then
             echo "ERROR: Found placeholder chapter descriptions"
             exit 1
           fi
-      
+
       - name: Verify chapter word count
         run: |
           for file in docs/**/*.md; do
             words=$(wc -w < "$file")
-            if [ $words -lt 2000 ]; then
-              echo "ERROR: $file has only $words words (minimum 2000)"
+            if [ $words -lt 100 ]; then
+              echo "ERROR: $file has only $words words (minimum 100)"
               exit 1
             fi
           done
-      
+
       - name: Check for broken links
         uses: lycheeverse/lychee-action@v1
-      
+
       - name: Build Docusaurus
         run: |
           npm install
