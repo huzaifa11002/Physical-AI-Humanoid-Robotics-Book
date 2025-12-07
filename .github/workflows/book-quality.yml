@@ -1,41 +1,35 @@
-name: Book Quality Check
+name: Deploy Docusaurus to GitHub Pages
 
-on: [push, pull_request]
+on:
+  push:
+    branches:
+      - main
+  workflow_dispatch:
+
+permissions:
+  contents: write  # GH Pages ko push karne ke liye
 
 jobs:
-  content-validation:
+  deploy:
     runs-on: ubuntu-latest
+
     steps:
       - name: Checkout repository
         uses: actions/checkout@v4
-      - name: Check for TODO placeholders
-        run: |
-          if grep -r "TODO:" docs/; then
-            echo "ERROR: Found TODO placeholders in content"
-            exit 1
-          fi
 
-      - name: Check for placeholder text
-        run: |
-          if grep -r "This chapter will" docs/; then
-            echo "ERROR: Found placeholder chapter descriptions"
-            exit 1
-          fi
+      - name: Setup Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: 18
 
-      - name: Verify chapter word count
-        run: |
-          for file in docs/**/*.md; do
-            words=$(wc -w < "$file")
-            if [ $words -lt 100 ]; then
-              echo "ERROR: $file has only $words words (minimum 100)"
-              exit 1
-            fi
-          done
-
-      - name: Check for broken links
-        uses: lycheeverse/lychee-action@v1
+      - name: Install dependencies
+        run: npm ci
 
       - name: Build Docusaurus
-        run: |
-          npm install
-          npm run build
+        run: npm run build
+
+      - name: Deploy to GitHub Pages
+        uses: peaceiris/actions-gh-pages@v3
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./build

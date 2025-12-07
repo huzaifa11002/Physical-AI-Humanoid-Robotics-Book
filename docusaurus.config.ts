@@ -15,14 +15,14 @@ const config: Config = {
   },
 
   // Set the production url of your site here
-  url: 'https://specifykit.github.io', // Placeholder for GitHub Pages deployment
+  url: 'https://huzaifa11002.github.io', // Placeholder for GitHub Pages deployment
   // Set the /<baseUrl>/ pathname under which your site is served
   // For GitHub pages deployment, it is often '/<projectName>/'
-  baseUrl: '/ai-native-book/', // For GitHub Pages deployment, adjust as needed
+  baseUrl: '/Physical-AI-Humanoid-Robotics-Book/', // For GitHub Pages deployment, adjust as needed
 
   // GitHub pages deployment config.
-  organizationName: 'specifykit', // Usually your GitHub org/user name.
-  projectName: 'ai-native-book', // Usually your repo name.
+  organizationName: 'huzaifa11002', // Usually your GitHub org/user name.
+  projectName: 'Physical-AI-Humanoid-Robotics-Book', // Usually your repo name.
 
   onBrokenLinks: 'throw',
 
