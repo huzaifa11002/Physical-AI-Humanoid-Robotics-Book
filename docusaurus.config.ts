@@ -5,7 +5,7 @@ import type * as Preset from '@docusaurus/preset-classic';
 // This runs in Node.js - Don't use client-side code here (browser APIs, JSX...)
 
 const config: Config = {
-  title: 'Physical AI & Humanoid Robotics: From Simulation to Reality',
+  title: 'Physical AI & Humanoid Robotics Book',
   tagline: 'A comprehensive guide to building intelligent embodied systems.',
   favicon: 'img/favicon.ico',
 
@@ -15,14 +15,14 @@ const config: Config = {
   },
 
   // Set the production url of your site here
-  url: 'https://huzaifa11002.github.io', // Placeholder for GitHub Pages deployment
+  url: 'https://physical-ai-humanoid-robotics-book-bice.vercel.app/', // Placeholder for GitHub Pages deployment
   // Set the /<baseUrl>/ pathname under which your site is served
   // For GitHub pages deployment, it is often '/<projectName>/'
-  baseUrl: '/Physical-AI-Humanoid-Robotics-Book/', // For GitHub Pages deployment, adjust as needed
+  baseUrl: '/', // For GitHub Pages deployment, adjust as needed
 
   // GitHub pages deployment config.
-  organizationName: 'huzaifa11002', // Usually your GitHub org/user name.
-  projectName: 'Physical-AI-Humanoid-Robotics-Book', // Usually your repo name.
+  organizationName: 'specifykit', // Usually your GitHub org/user name.
+  projectName: 'ai-native-book', // Usually your repo name.
 
   onBrokenLinks: 'throw',
 
