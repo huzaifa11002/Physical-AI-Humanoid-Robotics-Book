@@ -3,326 +3,326 @@ import ComponentCreator from '@docusaurus/ComponentCreator';
 
 export default [
   {
-    path: '/ai-native-book/__docusaurus/debug',
-    component: ComponentCreator('/ai-native-book/__docusaurus/debug', 'bf0'),
+    path: '/__docusaurus/debug',
+    component: ComponentCreator('/__docusaurus/debug', '5ff'),
     exact: true
   },
   {
-    path: '/ai-native-book/__docusaurus/debug/config',
-    component: ComponentCreator('/ai-native-book/__docusaurus/debug/config', '587'),
+    path: '/__docusaurus/debug/config',
+    component: ComponentCreator('/__docusaurus/debug/config', '5ba'),
     exact: true
   },
   {
-    path: '/ai-native-book/__docusaurus/debug/content',
-    component: ComponentCreator('/ai-native-book/__docusaurus/debug/content', '318'),
+    path: '/__docusaurus/debug/content',
+    component: ComponentCreator('/__docusaurus/debug/content', 'a2b'),
     exact: true
   },
   {
-    path: '/ai-native-book/__docusaurus/debug/globalData',
-    component: ComponentCreator('/ai-native-book/__docusaurus/debug/globalData', '757'),
+    path: '/__docusaurus/debug/globalData',
+    component: ComponentCreator('/__docusaurus/debug/globalData', 'c3c'),
     exact: true
   },
   {
-    path: '/ai-native-book/__docusaurus/debug/metadata',
-    component: ComponentCreator('/ai-native-book/__docusaurus/debug/metadata', 'f6e'),
+    path: '/__docusaurus/debug/metadata',
+    component: ComponentCreator('/__docusaurus/debug/metadata', '156'),
     exact: true
   },
   {
-    path: '/ai-native-book/__docusaurus/debug/registry',
-    component: ComponentCreator('/ai-native-book/__docusaurus/debug/registry', 'e58'),
+    path: '/__docusaurus/debug/registry',
+    component: ComponentCreator('/__docusaurus/debug/registry', '88c'),
     exact: true
   },
   {
-    path: '/ai-native-book/__docusaurus/debug/routes',
-    component: ComponentCreator('/ai-native-book/__docusaurus/debug/routes', 'adc'),
+    path: '/__docusaurus/debug/routes',
+    component: ComponentCreator('/__docusaurus/debug/routes', '000'),
     exact: true
   },
   {
-    path: '/ai-native-book/blog',
-    component: ComponentCreator('/ai-native-book/blog', 'ab0'),
+    path: '/blog',
+    component: ComponentCreator('/blog', 'b2f'),
     exact: true
   },
   {
-    path: '/ai-native-book/blog/archive',
-    component: ComponentCreator('/ai-native-book/blog/archive', 'd97'),
+    path: '/blog/archive',
+    component: ComponentCreator('/blog/archive', '182'),
     exact: true
   },
   {
-    path: '/ai-native-book/blog/authors',
-    component: ComponentCreator('/ai-native-book/blog/authors', '358'),
+    path: '/blog/authors',
+    component: ComponentCreator('/blog/authors', '0b7'),
     exact: true
   },
   {
-    path: '/ai-native-book/blog/authors/all-sebastien-lorber-articles',
-    component: ComponentCreator('/ai-native-book/blog/authors/all-sebastien-lorber-articles', 'e50'),
+    path: '/blog/authors/all-sebastien-lorber-articles',
+    component: ComponentCreator('/blog/authors/all-sebastien-lorber-articles', '4a1'),
     exact: true
   },
   {
-    path: '/ai-native-book/blog/authors/yangshun',
-    component: ComponentCreator('/ai-native-book/blog/authors/yangshun', '952'),
+    path: '/blog/authors/yangshun',
+    component: ComponentCreator('/blog/authors/yangshun', 'a68'),
     exact: true
   },
   {
-    path: '/ai-native-book/blog/first-blog-post',
-    component: ComponentCreator('/ai-native-book/blog/first-blog-post', 'f3a'),
+    path: '/blog/first-blog-post',
+    component: ComponentCreator('/blog/first-blog-post', '89a'),
     exact: true
   },
   {
-    path: '/ai-native-book/blog/long-blog-post',
-    component: ComponentCreator('/ai-native-book/blog/long-blog-post', 'add'),
+    path: '/blog/long-blog-post',
+    component: ComponentCreator('/blog/long-blog-post', '9ad'),
     exact: true
   },
   {
-    path: '/ai-native-book/blog/mdx-blog-post',
-    component: ComponentCreator('/ai-native-book/blog/mdx-blog-post', '673'),
+    path: '/blog/mdx-blog-post',
+    component: ComponentCreator('/blog/mdx-blog-post', 'e9f'),
     exact: true
   },
   {
-    path: '/ai-native-book/blog/tags',
-    component: ComponentCreator('/ai-native-book/blog/tags', 'c39'),
+    path: '/blog/tags',
+    component: ComponentCreator('/blog/tags', '287'),
     exact: true
   },
   {
-    path: '/ai-native-book/blog/tags/docusaurus',
-    component: ComponentCreator('/ai-native-book/blog/tags/docusaurus', '5c7'),
+    path: '/blog/tags/docusaurus',
+    component: ComponentCreator('/blog/tags/docusaurus', '704'),
     exact: true
   },
   {
-    path: '/ai-native-book/blog/tags/facebook',
-    component: ComponentCreator('/ai-native-book/blog/tags/facebook', '455'),
+    path: '/blog/tags/facebook',
+    component: ComponentCreator('/blog/tags/facebook', '858'),
     exact: true
   },
   {
-    path: '/ai-native-book/blog/tags/hello',
-    component: ComponentCreator('/ai-native-book/blog/tags/hello', 'b4e'),
+    path: '/blog/tags/hello',
+    component: ComponentCreator('/blog/tags/hello', '299'),
     exact: true
   },
   {
-    path: '/ai-native-book/blog/tags/hola',
-    component: ComponentCreator('/ai-native-book/blog/tags/hola', 'c16'),
+    path: '/blog/tags/hola',
+    component: ComponentCreator('/blog/tags/hola', '00d'),
     exact: true
   },
   {
-    path: '/ai-native-book/blog/welcome',
-    component: ComponentCreator('/ai-native-book/blog/welcome', 'bcf'),
+    path: '/blog/welcome',
+    component: ComponentCreator('/blog/welcome', 'd2b'),
     exact: true
   },
   {
-    path: '/ai-native-book/markdown-page',
-    component: ComponentCreator('/ai-native-book/markdown-page', 'a10'),
+    path: '/markdown-page',
+    component: ComponentCreator('/markdown-page', '3d7'),
     exact: true
   },
   {
-    path: '/ai-native-book/docs',
-    component: ComponentCreator('/ai-native-book/docs', '36f'),
+    path: '/docs',
+    component: ComponentCreator('/docs', 'acb'),
     routes: [
       {
-        path: '/ai-native-book/docs',
-        component: ComponentCreator('/ai-native-book/docs', '934'),
+        path: '/docs',
+        component: ComponentCreator('/docs', 'c4d'),
         routes: [
           {
-            path: '/ai-native-book/docs',
-            component: ComponentCreator('/ai-native-book/docs', '591'),
+            path: '/docs',
+            component: ComponentCreator('/docs', 'ee1'),
             routes: [
               {
-                path: '/ai-native-book/docs/ai-robot-brain/',
-                component: ComponentCreator('/ai-native-book/docs/ai-robot-brain/', 'a60'),
+                path: '/docs/ai-robot-brain/',
+                component: ComponentCreator('/docs/ai-robot-brain/', '8f7'),
                 exact: true,
                 sidebar: "mainSidebar"
               },
               {
-                path: '/ai-native-book/docs/ai-robot-brain/isaac-ros-perception',
-                component: ComponentCreator('/ai-native-book/docs/ai-robot-brain/isaac-ros-perception', 'a7e'),
+                path: '/docs/ai-robot-brain/isaac-ros-perception',
+                component: ComponentCreator('/docs/ai-robot-brain/isaac-ros-perception', 'bce'),
                 exact: true,
                 sidebar: "mainSidebar"
               },
               {
-                path: '/ai-native-book/docs/ai-robot-brain/nav2-path-planning',
-                component: ComponentCreator('/ai-native-book/docs/ai-robot-brain/nav2-path-planning', '5ad'),
+                path: '/docs/ai-robot-brain/nav2-path-planning',
+                component: ComponentCreator('/docs/ai-robot-brain/nav2-path-planning', '6bf'),
                 exact: true,
                 sidebar: "mainSidebar"
               },
               {
-                path: '/ai-native-book/docs/ai-robot-brain/nvidia-isaac-sim',
-                component: ComponentCreator('/ai-native-book/docs/ai-robot-brain/nvidia-isaac-sim', '3be'),
+                path: '/docs/ai-robot-brain/nvidia-isaac-sim',
+                component: ComponentCreator('/docs/ai-robot-brain/nvidia-isaac-sim', 'ff2'),
                 exact: true,
                 sidebar: "mainSidebar"
               },
               {
-                path: '/ai-native-book/docs/appendices/cloud-setup',
-                component: ComponentCreator('/ai-native-book/docs/appendices/cloud-setup', '111'),
+                path: '/docs/appendices/cloud-setup',
+                component: ComponentCreator('/docs/appendices/cloud-setup', '468'),
                 exact: true,
                 sidebar: "mainSidebar"
               },
               {
-                path: '/ai-native-book/docs/appendices/hardware-guide',
-                component: ComponentCreator('/ai-native-book/docs/appendices/hardware-guide', 'f03'),
+                path: '/docs/appendices/hardware-guide',
+                component: ComponentCreator('/docs/appendices/hardware-guide', '433'),
                 exact: true,
                 sidebar: "mainSidebar"
               },
               {
-                path: '/ai-native-book/docs/appendices/resources',
-                component: ComponentCreator('/ai-native-book/docs/appendices/resources', 'c16'),
+                path: '/docs/appendices/resources',
+                component: ComponentCreator('/docs/appendices/resources', '3ad'),
                 exact: true,
                 sidebar: "mainSidebar"
               },
               {
-                path: '/ai-native-book/docs/appendices/troubleshooting',
-                component: ComponentCreator('/ai-native-book/docs/appendices/troubleshooting', '23d'),
+                path: '/docs/appendices/troubleshooting',
+                component: ComponentCreator('/docs/appendices/troubleshooting', '430'),
                 exact: true,
                 sidebar: "mainSidebar"
               },
               {
-                path: '/ai-native-book/docs/digital-twin/',
-                component: ComponentCreator('/ai-native-book/docs/digital-twin/', 'c81'),
+                path: '/docs/digital-twin/',
+                component: ComponentCreator('/docs/digital-twin/', 'd01'),
                 exact: true,
                 sidebar: "mainSidebar"
               },
               {
-                path: '/ai-native-book/docs/digital-twin/gazebo-fundamentals',
-                component: ComponentCreator('/ai-native-book/docs/digital-twin/gazebo-fundamentals', 'ac1'),
+                path: '/docs/digital-twin/gazebo-fundamentals',
+                component: ComponentCreator('/docs/digital-twin/gazebo-fundamentals', '4c3'),
                 exact: true,
                 sidebar: "mainSidebar"
               },
               {
-                path: '/ai-native-book/docs/digital-twin/physics-simulation',
-                component: ComponentCreator('/ai-native-book/docs/digital-twin/physics-simulation', 'e93'),
+                path: '/docs/digital-twin/physics-simulation',
+                component: ComponentCreator('/docs/digital-twin/physics-simulation', '276'),
                 exact: true,
                 sidebar: "mainSidebar"
               },
               {
-                path: '/ai-native-book/docs/digital-twin/unity-integration',
-                component: ComponentCreator('/ai-native-book/docs/digital-twin/unity-integration', 'ebf'),
+                path: '/docs/digital-twin/unity-integration',
+                component: ComponentCreator('/docs/digital-twin/unity-integration', '13f'),
                 exact: true,
                 sidebar: "mainSidebar"
               },
               {
-                path: '/ai-native-book/docs/glossary',
-                component: ComponentCreator('/ai-native-book/docs/glossary', '96f'),
+                path: '/docs/glossary',
+                component: ComponentCreator('/docs/glossary', '552'),
                 exact: true,
                 sidebar: "mainSidebar"
               },
               {
-                path: '/ai-native-book/docs/instructor-guide',
-                component: ComponentCreator('/ai-native-book/docs/instructor-guide', '7dc'),
+                path: '/docs/instructor-guide',
+                component: ComponentCreator('/docs/instructor-guide', '100'),
                 exact: true,
                 sidebar: "mainSidebar"
               },
               {
-                path: '/ai-native-book/docs/intro',
-                component: ComponentCreator('/ai-native-book/docs/intro', '0e8'),
+                path: '/docs/intro',
+                component: ComponentCreator('/docs/intro', '38d'),
                 exact: true,
                 sidebar: "mainSidebar"
               },
               {
-                path: '/ai-native-book/docs/robotic-nervous-system/',
-                component: ComponentCreator('/ai-native-book/docs/robotic-nervous-system/', 'c1e'),
+                path: '/docs/robotic-nervous-system/',
+                component: ComponentCreator('/docs/robotic-nervous-system/', '47d'),
                 exact: true,
                 sidebar: "mainSidebar"
               },
               {
-                path: '/ai-native-book/docs/robotic-nervous-system/introduction-physical-ai',
-                component: ComponentCreator('/ai-native-book/docs/robotic-nervous-system/introduction-physical-ai', 'b35'),
+                path: '/docs/robotic-nervous-system/introduction-physical-ai',
+                component: ComponentCreator('/docs/robotic-nervous-system/introduction-physical-ai', '1ae'),
                 exact: true,
                 sidebar: "mainSidebar"
               },
               {
-                path: '/ai-native-book/docs/robotic-nervous-system/ros2-architecture',
-                component: ComponentCreator('/ai-native-book/docs/robotic-nervous-system/ros2-architecture', '661'),
+                path: '/docs/robotic-nervous-system/ros2-architecture',
+                component: ComponentCreator('/docs/robotic-nervous-system/ros2-architecture', '2e6'),
                 exact: true,
                 sidebar: "mainSidebar"
               },
               {
-                path: '/ai-native-book/docs/robotic-nervous-system/ros2-python-development',
-                component: ComponentCreator('/ai-native-book/docs/robotic-nervous-system/ros2-python-development', '51b'),
+                path: '/docs/robotic-nervous-system/ros2-python-development',
+                component: ComponentCreator('/docs/robotic-nervous-system/ros2-python-development', '965'),
                 exact: true,
                 sidebar: "mainSidebar"
               },
               {
-                path: '/ai-native-book/docs/robotic-nervous-system/urdf-robot-modeling',
-                component: ComponentCreator('/ai-native-book/docs/robotic-nervous-system/urdf-robot-modeling', '19f'),
+                path: '/docs/robotic-nervous-system/urdf-robot-modeling',
+                component: ComponentCreator('/docs/robotic-nervous-system/urdf-robot-modeling', '3c9'),
                 exact: true,
                 sidebar: "mainSidebar"
               },
               {
-                path: '/ai-native-book/docs/student-resources/ros2_python_cheat_sheet',
-                component: ComponentCreator('/ai-native-book/docs/student-resources/ros2_python_cheat_sheet', '492'),
+                path: '/docs/student-resources/ros2_python_cheat_sheet',
+                component: ComponentCreator('/docs/student-resources/ros2_python_cheat_sheet', '333'),
                 exact: true,
                 sidebar: "mainSidebar"
               },
               {
-                path: '/ai-native-book/docs/student-resources/vla_reference_card',
-                component: ComponentCreator('/ai-native-book/docs/student-resources/vla_reference_card', 'd31'),
+                path: '/docs/student-resources/vla_reference_card',
+                component: ComponentCreator('/docs/student-resources/vla_reference_card', '1b0'),
                 exact: true,
                 sidebar: "mainSidebar"
               },
               {
-                path: '/ai-native-book/docs/tutorial-basics/congratulations',
-                component: ComponentCreator('/ai-native-book/docs/tutorial-basics/congratulations', 'bf8'),
+                path: '/docs/tutorial-basics/congratulations',
+                component: ComponentCreator('/docs/tutorial-basics/congratulations', '70e'),
                 exact: true
               },
               {
-                path: '/ai-native-book/docs/tutorial-basics/create-a-blog-post',
-                component: ComponentCreator('/ai-native-book/docs/tutorial-basics/create-a-blog-post', '3af'),
+                path: '/docs/tutorial-basics/create-a-blog-post',
+                component: ComponentCreator('/docs/tutorial-basics/create-a-blog-post', '315'),
                 exact: true
               },
               {
-                path: '/ai-native-book/docs/tutorial-basics/create-a-document',
-                component: ComponentCreator('/ai-native-book/docs/tutorial-basics/create-a-document', 'd24'),
+                path: '/docs/tutorial-basics/create-a-document',
+                component: ComponentCreator('/docs/tutorial-basics/create-a-document', 'f86'),
                 exact: true
               },
               {
-                path: '/ai-native-book/docs/tutorial-basics/create-a-page',
-                component: ComponentCreator('/ai-native-book/docs/tutorial-basics/create-a-page', '917'),
+                path: '/docs/tutorial-basics/create-a-page',
+                component: ComponentCreator('/docs/tutorial-basics/create-a-page', '9f6'),
                 exact: true
               },
               {
-                path: '/ai-native-book/docs/tutorial-basics/deploy-your-site',
-                component: ComponentCreator('/ai-native-book/docs/tutorial-basics/deploy-your-site', '399'),
+                path: '/docs/tutorial-basics/deploy-your-site',
+                component: ComponentCreator('/docs/tutorial-basics/deploy-your-site', 'b91'),
                 exact: true
               },
               {
-                path: '/ai-native-book/docs/tutorial-basics/markdown-features',
-                component: ComponentCreator('/ai-native-book/docs/tutorial-basics/markdown-features', 'c98'),
+                path: '/docs/tutorial-basics/markdown-features',
+                component: ComponentCreator('/docs/tutorial-basics/markdown-features', '272'),
                 exact: true
               },
               {
-                path: '/ai-native-book/docs/tutorial-extras/manage-docs-versions',
-                component: ComponentCreator('/ai-native-book/docs/tutorial-extras/manage-docs-versions', '7c9'),
+                path: '/docs/tutorial-extras/manage-docs-versions',
+                component: ComponentCreator('/docs/tutorial-extras/manage-docs-versions', 'a34'),
                 exact: true
               },
               {
-                path: '/ai-native-book/docs/tutorial-extras/translate-your-site',
-                component: ComponentCreator('/ai-native-book/docs/tutorial-extras/translate-your-site', 'a44'),
+                path: '/docs/tutorial-extras/translate-your-site',
+                component: ComponentCreator('/docs/tutorial-extras/translate-your-site', '739'),
                 exact: true
               },
               {
-                path: '/ai-native-book/docs/video_embedding_instructions',
-                component: ComponentCreator('/ai-native-book/docs/video_embedding_instructions', '148'),
+                path: '/docs/video_embedding_instructions',
+                component: ComponentCreator('/docs/video_embedding_instructions', 'b09'),
                 exact: true,
                 sidebar: "mainSidebar"
               },
               {
-                path: '/ai-native-book/docs/vision-language-action/',
-                component: ComponentCreator('/ai-native-book/docs/vision-language-action/', '1b4'),
+                path: '/docs/vision-language-action/',
+                component: ComponentCreator('/docs/vision-language-action/', '663'),
                 exact: true,
                 sidebar: "mainSidebar"
               },
               {
-                path: '/ai-native-book/docs/vision-language-action/capstone-autonomous-humanoid',
-                component: ComponentCreator('/ai-native-book/docs/vision-language-action/capstone-autonomous-humanoid', '7b1'),
+                path: '/docs/vision-language-action/capstone-autonomous-humanoid',
+                component: ComponentCreator('/docs/vision-language-action/capstone-autonomous-humanoid', 'a55'),
                 exact: true,
                 sidebar: "mainSidebar"
               },
               {
-                path: '/ai-native-book/docs/vision-language-action/llm-cognitive-planning',
-                component: ComponentCreator('/ai-native-book/docs/vision-language-action/llm-cognitive-planning', '42f'),
+                path: '/docs/vision-language-action/llm-cognitive-planning',
+                component: ComponentCreator('/docs/vision-language-action/llm-cognitive-planning', '281'),
                 exact: true,
                 sidebar: "mainSidebar"
               },
               {
-                path: '/ai-native-book/docs/vision-language-action/voice-to-action',
-                component: ComponentCreator('/ai-native-book/docs/vision-language-action/voice-to-action', '78d'),
+                path: '/docs/vision-language-action/voice-to-action',
+                component: ComponentCreator('/docs/vision-language-action/voice-to-action', '796'),
                 exact: true,
                 sidebar: "mainSidebar"
               }
@@ -333,8 +333,8 @@ export default [
     ]
   },
   {
-    path: '/ai-native-book/',
-    component: ComponentCreator('/ai-native-book/', '54f'),
+    path: '/',
+    component: ComponentCreator('/', 'e5f'),
     exact: true
   },
   {

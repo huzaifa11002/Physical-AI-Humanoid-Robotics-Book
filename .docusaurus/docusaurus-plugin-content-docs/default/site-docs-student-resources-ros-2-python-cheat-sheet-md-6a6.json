@@ -5,7 +5,7 @@
   "source": "@site/docs/student-resources/ros2_python_cheat_sheet.md",
   "sourceDirName": "student-resources",
   "slug": "/student-resources/ros2_python_cheat_sheet",
-  "permalink": "/ai-native-book/docs/student-resources/ros2_python_cheat_sheet",
+  "permalink": "/docs/student-resources/ros2_python_cheat_sheet",
   "draft": false,
   "unlisted": false,
   "editUrl": "https://github.com/specifykit/ai-native-book/tree/main/docs/student-resources/ros2_python_cheat_sheet.md",
@@ -15,10 +15,10 @@
   "sidebar": "mainSidebar",
   "previous": {
     "title": "Instructor Guide: Physical AI & Humanoid Robotics",
-    "permalink": "/ai-native-book/docs/instructor-guide"
+    "permalink": "/docs/instructor-guide"
   },
   "next": {
     "title": "Vision-Language-Action (VLA) Reference Card",
-    "permalink": "/ai-native-book/docs/student-resources/vla_reference_card"
+    "permalink": "/docs/student-resources/vla_reference_card"
   }
 }

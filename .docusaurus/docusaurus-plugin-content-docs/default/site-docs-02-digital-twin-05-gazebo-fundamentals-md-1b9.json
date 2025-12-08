@@ -5,7 +5,7 @@
   "source": "@site/docs/02-digital-twin/05-gazebo-fundamentals.md",
   "sourceDirName": "02-digital-twin",
   "slug": "/digital-twin/gazebo-fundamentals",
-  "permalink": "/ai-native-book/docs/digital-twin/gazebo-fundamentals",
+  "permalink": "/docs/digital-twin/gazebo-fundamentals",
   "draft": false,
   "unlisted": false,
   "editUrl": "https://github.com/specifykit/ai-native-book/tree/main/docs/02-digital-twin/05-gazebo-fundamentals.md",
@@ -16,10 +16,10 @@
   "sidebar": "mainSidebar",
   "previous": {
     "title": "Module 2: The Digital Twin",
-    "permalink": "/ai-native-book/docs/digital-twin/"
+    "permalink": "/docs/digital-twin/"
   },
   "next": {
     "title": "Chapter 6: Physics Simulation",
-    "permalink": "/ai-native-book/docs/digital-twin/physics-simulation"
+    "permalink": "/docs/digital-twin/physics-simulation"
   }
 }

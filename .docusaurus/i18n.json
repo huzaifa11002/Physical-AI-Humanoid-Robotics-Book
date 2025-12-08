@@ -13,8 +13,8 @@
       "calendar": "gregory",
       "path": "en",
       "translate": false,
-      "url": "https://specifykit.github.io",
-      "baseUrl": "/ai-native-book/"
+      "url": "https://physical-ai-humanoid-robotics-book-bice.vercel.app",
+      "baseUrl": "/"
     }
   }
 }

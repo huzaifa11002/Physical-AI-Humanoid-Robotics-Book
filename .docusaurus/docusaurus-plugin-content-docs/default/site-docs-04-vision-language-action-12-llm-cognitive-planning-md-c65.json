@@ -5,7 +5,7 @@
   "source": "@site/docs/04-vision-language-action/12-llm-cognitive-planning.md",
   "sourceDirName": "04-vision-language-action",
   "slug": "/vision-language-action/llm-cognitive-planning",
-  "permalink": "/ai-native-book/docs/vision-language-action/llm-cognitive-planning",
+  "permalink": "/docs/vision-language-action/llm-cognitive-planning",
   "draft": false,
   "unlisted": false,
   "editUrl": "https://github.com/specifykit/ai-native-book/tree/main/docs/04-vision-language-action/12-llm-cognitive-planning.md",
@@ -16,10 +16,10 @@
   "sidebar": "mainSidebar",
   "previous": {
     "title": "Chapter 11: Voice-to-Action",
-    "permalink": "/ai-native-book/docs/vision-language-action/voice-to-action"
+    "permalink": "/docs/vision-language-action/voice-to-action"
   },
   "next": {
     "title": "Chapter 13: Capstone: Autonomous Humanoid",
-    "permalink": "/ai-native-book/docs/vision-language-action/capstone-autonomous-humanoid"
+    "permalink": "/docs/vision-language-action/capstone-autonomous-humanoid"
   }
 }

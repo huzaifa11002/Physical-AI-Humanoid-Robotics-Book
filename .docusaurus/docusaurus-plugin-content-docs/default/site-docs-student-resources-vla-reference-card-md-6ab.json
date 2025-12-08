@@ -5,7 +5,7 @@
   "source": "@site/docs/student-resources/vla_reference_card.md",
   "sourceDirName": "student-resources",
   "slug": "/student-resources/vla_reference_card",
-  "permalink": "/ai-native-book/docs/student-resources/vla_reference_card",
+  "permalink": "/docs/student-resources/vla_reference_card",
   "draft": false,
   "unlisted": false,
   "editUrl": "https://github.com/specifykit/ai-native-book/tree/main/docs/student-resources/vla_reference_card.md",
@@ -15,10 +15,10 @@
   "sidebar": "mainSidebar",
   "previous": {
     "title": "ROS 2 Python Cheat Sheet",
-    "permalink": "/ai-native-book/docs/student-resources/ros2_python_cheat_sheet"
+    "permalink": "/docs/student-resources/ros2_python_cheat_sheet"
   },
   "next": {
     "title": "Video Embedding Instructions",
-    "permalink": "/ai-native-book/docs/video_embedding_instructions"
+    "permalink": "/docs/video_embedding_instructions"
   }
 }

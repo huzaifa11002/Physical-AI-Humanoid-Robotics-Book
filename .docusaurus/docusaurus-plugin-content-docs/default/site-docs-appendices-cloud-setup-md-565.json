@@ -5,7 +5,7 @@
   "source": "@site/docs/appendices/cloud-setup.md",
   "sourceDirName": "appendices",
   "slug": "/appendices/cloud-setup",
-  "permalink": "/ai-native-book/docs/appendices/cloud-setup",
+  "permalink": "/docs/appendices/cloud-setup",
   "draft": false,
   "unlisted": false,
   "editUrl": "https://github.com/specifykit/ai-native-book/tree/main/docs/appendices/cloud-setup.md",
@@ -15,10 +15,10 @@
   "sidebar": "mainSidebar",
   "previous": {
     "title": "Troubleshooting Guide",
-    "permalink": "/ai-native-book/docs/appendices/troubleshooting"
+    "permalink": "/docs/appendices/troubleshooting"
   },
   "next": {
     "title": "Additional Resources",
-    "permalink": "/ai-native-book/docs/appendices/resources"
+    "permalink": "/docs/appendices/resources"
   }
 }

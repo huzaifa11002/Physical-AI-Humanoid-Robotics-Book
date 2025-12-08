@@ -4,7 +4,7 @@
  * Modify the docusaurus.config.js file at your site's root instead.
  */
 export default {
-  "title": "Physical AI & Humanoid Robotics: From Simulation to Reality",
+  "title": "Physical AI & Humanoid Robotics Book",
   "tagline": "A comprehensive guide to building intelligent embodied systems.",
   "favicon": "img/favicon.ico",
   "future": {
@@ -28,8 +28,8 @@ export default {
     },
     "experimental_router": "browser"
   },
-  "url": "https://specifykit.github.io",
-  "baseUrl": "/ai-native-book/",
+  "url": "https://physical-ai-humanoid-robotics-book-bice.vercel.app",
+  "baseUrl": "/",
   "organizationName": "specifykit",
   "projectName": "ai-native-book",
   "onBrokenLinks": "throw",

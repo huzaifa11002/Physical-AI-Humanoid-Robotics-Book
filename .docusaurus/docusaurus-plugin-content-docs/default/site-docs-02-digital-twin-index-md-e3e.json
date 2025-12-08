@@ -5,7 +5,7 @@
   "source": "@site/docs/02-digital-twin/index.md",
   "sourceDirName": "02-digital-twin",
   "slug": "/digital-twin/",
-  "permalink": "/ai-native-book/docs/digital-twin/",
+  "permalink": "/docs/digital-twin/",
   "draft": false,
   "unlisted": false,
   "editUrl": "https://github.com/specifykit/ai-native-book/tree/main/docs/02-digital-twin/index.md",
@@ -15,10 +15,10 @@
   "sidebar": "mainSidebar",
   "previous": {
     "title": "Chapter 4: URDF Robot Modeling",
-    "permalink": "/ai-native-book/docs/robotic-nervous-system/urdf-robot-modeling"
+    "permalink": "/docs/robotic-nervous-system/urdf-robot-modeling"
   },
   "next": {
     "title": "Chapter 5: Gazebo Fundamentals",
-    "permalink": "/ai-native-book/docs/digital-twin/gazebo-fundamentals"
+    "permalink": "/docs/digital-twin/gazebo-fundamentals"
   }
 }

@@ -5,7 +5,7 @@
   "source": "@site/docs/intro.md",
   "sourceDirName": ".",
   "slug": "/intro",
-  "permalink": "/ai-native-book/docs/intro",
+  "permalink": "/docs/intro",
   "draft": false,
   "unlisted": false,
   "editUrl": "https://github.com/specifykit/ai-native-book/tree/main/docs/intro.md",
@@ -18,6 +18,6 @@
   "sidebar": "mainSidebar",
   "next": {
     "title": "Module 1: The Robotic Nervous System",
-    "permalink": "/ai-native-book/docs/robotic-nervous-system/"
+    "permalink": "/docs/robotic-nervous-system/"
   }
 }
