@@ -1,0 +1,59 @@
+.features {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    padding: 2rem 0;
+}
+
+.feature {
+    display: flex;
+    flex-direction: column;
+    background: var(--ifm-card-background-color);
+    border: 1px solid var(--ifm-color-emphasis-200);
+    border-radius: var(--ifm-card-border-radius);
+    padding: 2rem;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+    height: 100%;
+}
+
+.feature:hover {
+    transform: translateY(-5px);
+    box-shadow: var(--ifm-global-shadow-md);
+    border-color: var(--ifm-color-primary);
+}
+
+.featureTitle {
+    margin-bottom: 1rem;
+    font-size: 1.5rem;
+    color: var(--ifm-color-primary);
+}
+
+.chapterList {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.chapterItem {
+    margin-bottom: 0.5rem;
+    display: flex;
+    align-items: center;
+}
+
+.chapterItem::before {
+    content: '📄';
+    margin-right: 0.5rem;
+    font-size: 1rem;
+}
+
+.chapterLink {
+    color: var(--ifm-color-content);
+    text-decoration: none;
+    font-size: 1rem;
+    transition: color 0.2s;
+}
+
+.chapterLink:hover {
+    color: var(--ifm-color-primary);
+    text-decoration: underline;
+}

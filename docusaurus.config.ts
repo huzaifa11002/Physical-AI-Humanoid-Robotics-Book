@@ -1,5 +1,5 @@
-import {themes as prismThemes} from 'prism-react-renderer';
-import type {Config} from '@docusaurus/types';
+import { themes as prismThemes } from 'prism-react-renderer';
+import type { Config } from '@docusaurus/types';
 import type * as Preset from '@docusaurus/preset-classic';
 
 // This runs in Node.js - Don't use client-side code here (browser APIs, JSX...)
@@ -43,7 +43,7 @@ const config: Config = {
           // Please change this to your repo.
           // Remove this to remove the "edit this page" links.
           editUrl:
-            'https://github.com/specifykit/ai-native-book/tree/main/', // Changed to project repo
+            'https://github.com/huzaifa11002/Physical-AI-Humanoid-Robotics-Book/tree/main/', // Changed to project repo
         },
         blog: {
           showReadingTime: true,
@@ -54,7 +54,7 @@ const config: Config = {
           // Please change this to your repo.
           // Remove this to remove the "edit this page" links.
           editUrl:
-            'https://github.com/specifykit/ai-native-book/tree/main/', // Changed to project repo
+            'https://github.com/huzaifa11002/Physical-AI-Humanoid-Robotics-Book/tree/main/', // Changed to project repo
           // Useful options to enforce blogging best practices
           onInlineTags: 'warn',
           onInlineAuthors: 'warn',
@@ -86,9 +86,9 @@ const config: Config = {
           position: 'left',
           label: 'Docs', // Changed label to Docs
         },
-        {to: '/blog', label: 'Blog', position: 'left'},
+        { to: '/blog', label: 'Blog', position: 'left' },
         {
-          href: 'https://github.com/specifykit/ai-native-book', // Changed to project repo
+          href: 'https://github.com/huzaifa11002/Physical-AI-Humanoid-Robotics-Book', // Changed to project repo
           label: 'GitHub',
           position: 'right',
         },
@@ -98,46 +98,31 @@ const config: Config = {
       style: 'dark',
       links: [
         {
-          title: 'Docs',
+          title: 'Modules',
           items: [
-            {
-              label: 'Tutorial',
-              to: '/docs/intro',
-            },
+            { label: 'Robotic Nervous System', to: '/docs/robotic-nervous-system' },
+            { label: 'Digital Twin', to: '/docs/digital-twin' },
+            { label: 'AI Robot Brain', to: '/docs/ai-robot-brain' },
+            { label: 'Vision Language Action', to: '/docs/vision-language-action' },
+          ],
+        },
+        {
+          title: 'Resources',
+          items: [
+            { label: 'GitHub Repository', href: 'https://github.com/huzaifa11002/Physical-AI-Humanoid-Robotics-Book' },
+            { label: 'Instructor Guide', to: '/docs/instructor-guide' },
+            { label: 'Glossary', to: '/docs/glossary' },
           ],
         },
         {
           title: 'Community',
           items: [
-            {
-              label: 'Stack Overflow',
-              href: 'https://stackoverflow.com/questions/tagged/docusaurus',
-            },
-            {
-              label: 'Discord',
-              href: 'https://discordapp.com/invite/docusaurus',
-            },
-            {
-              label: 'X',
-              href: 'https://x.com/docusaurus',
-            },
-          ],
-        },
-        {
-          title: 'More',
-          items: [
-            {
-              label: 'Blog',
-              to: '/blog',
-            },
-            {
-              label: 'GitHub',
-              href: 'https://github.com/facebook/docusaurus',
-            },
+            { label: 'Discussions', href: 'https://github.com/huzaifa11002/Physical-AI-Humanoid-Robotics-Book/discussions' },
+            { label: 'Issues', href: 'https://github.com/huzaifa11002/Physical-AI-Humanoid-Robotics-Book/issues' },
           ],
         },
       ],
-      copyright: `Copyright © ${new Date().getFullYear()} SpecifyKit. Built with Docusaurus.`,
+      copyright: `Copyright © ${new Date().getFullYear()} Physical AI Book. Built with Docusaurus.`,
     },
     prism: {
       theme: prismThemes.github,

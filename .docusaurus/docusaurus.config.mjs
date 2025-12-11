@@ -47,7 +47,7 @@ export default {
       {
         "docs": {
           "sidebarPath": "./sidebars.ts",
-          "editUrl": "https://github.com/specifykit/ai-native-book/tree/main/"
+          "editUrl": "https://github.com/huzaifa11002/Physical-AI-Humanoid-Robotics-Book/tree/main/"
         },
         "blog": {
           "showReadingTime": true,
@@ -58,7 +58,7 @@ export default {
             ],
             "xslt": true
           },
-          "editUrl": "https://github.com/specifykit/ai-native-book/tree/main/",
+          "editUrl": "https://github.com/huzaifa11002/Physical-AI-Humanoid-Robotics-Book/tree/main/",
           "onInlineTags": "warn",
           "onInlineAuthors": "warn",
           "onUntruncatedBlogPosts": "warn"
@@ -95,7 +95,7 @@ export default {
           "position": "left"
         },
         {
-          "href": "https://github.com/specifykit/ai-native-book",
+          "href": "https://github.com/huzaifa11002/Physical-AI-Humanoid-Robotics-Book",
           "label": "GitHub",
           "position": "right"
         }
@@ -106,11 +106,40 @@ export default {
       "style": "dark",
       "links": [
         {
-          "title": "Docs",
+          "title": "Modules",
           "items": [
             {
-              "label": "Tutorial",
-              "to": "/docs/intro"
+              "label": "Robotic Nervous System",
+              "to": "/docs/robotic-nervous-system"
+            },
+            {
+              "label": "Digital Twin",
+              "to": "/docs/digital-twin"
+            },
+            {
+              "label": "AI Robot Brain",
+              "to": "/docs/ai-robot-brain"
+            },
+            {
+              "label": "Vision Language Action",
+              "to": "/docs/vision-language-action"
+            }
+          ]
+        },
+        {
+          "title": "Resources",
+          "items": [
+            {
+              "label": "GitHub Repository",
+              "href": "https://github.com/huzaifa11002/Physical-AI-Humanoid-Robotics-Book"
+            },
+            {
+              "label": "Instructor Guide",
+              "to": "/docs/instructor-guide"
+            },
+            {
+              "label": "Glossary",
+              "to": "/docs/glossary"
             }
           ]
         },
@@ -118,34 +147,17 @@ export default {
           "title": "Community",
           "items": [
             {
-              "label": "Stack Overflow",
-              "href": "https://stackoverflow.com/questions/tagged/docusaurus"
+              "label": "Discussions",
+              "href": "https://github.com/huzaifa11002/Physical-AI-Humanoid-Robotics-Book/discussions"
             },
             {
-              "label": "Discord",
-              "href": "https://discordapp.com/invite/docusaurus"
-            },
-            {
-              "label": "X",
-              "href": "https://x.com/docusaurus"
-            }
-          ]
-        },
-        {
-          "title": "More",
-          "items": [
-            {
-              "label": "Blog",
-              "to": "/blog"
-            },
-            {
-              "label": "GitHub",
-              "href": "https://github.com/facebook/docusaurus"
+              "label": "Issues",
+              "href": "https://github.com/huzaifa11002/Physical-AI-Humanoid-Robotics-Book/issues"
             }
           ]
         }
       ],
-      "copyright": "Copyright © 2025 SpecifyKit. Built with Docusaurus."
+      "copyright": "Copyright © 2025 Physical AI Book. Built with Docusaurus."
     },
     "prism": {
       "theme": {
