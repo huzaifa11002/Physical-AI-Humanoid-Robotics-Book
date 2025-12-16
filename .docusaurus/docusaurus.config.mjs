@@ -90,14 +90,9 @@ export default {
           "label": "Docs"
         },
         {
-          "to": "/blog",
-          "label": "Blog",
-          "position": "left"
-        },
-        {
-          "href": "https://github.com/huzaifa11002/Physical-AI-Humanoid-Robotics-Book",
           "label": "GitHub",
-          "position": "right"
+          "position": "right",
+          "href": "https://github.com/huzaifa11002/Physical-AI-Humanoid-Robotics-Book"
         }
       ],
       "hideOnScroll": false

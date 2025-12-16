@@ -86,11 +86,10 @@ const config: Config = {
           position: 'left',
           label: 'Docs', // Changed label to Docs
         },
-        { to: '/blog', label: 'Blog', position: 'left' },
         {
-          href: 'https://github.com/huzaifa11002/Physical-AI-Humanoid-Robotics-Book', // Changed to project repo
           label: 'GitHub',
           position: 'right',
+          href: 'https://github.com/huzaifa11002/Physical-AI-Humanoid-Robotics-Book',
         },
       ],
     },

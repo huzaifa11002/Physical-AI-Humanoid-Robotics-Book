@@ -2,6 +2,7 @@ import React, { useState, useRef, useEffect, forwardRef, useImperativeHandle } f
 import ReactMarkdown from 'react-markdown';
 import remarkGfm from 'remark-gfm';
 import rehypeHighlight from 'rehype-highlight';
+import AuthModal from '../AuthModal';
 import styles from './styles.module.css';
 
 interface Message {
@@ -88,6 +89,8 @@ const MarkdownMessage: React.FC<{ content: string }> = ({ content }) => {
 
 const Chatbot = forwardRef<ChatbotRef>((props, ref) => {
   const [isOpen, setIsOpen] = useState(false);
+  const [isAuthenticated, setIsAuthenticated] = useState(false);
+  const [showAuthModal, setShowAuthModal] = useState(false);
   const [messages, setMessages] = useState<Message[]>([
     {
       id: '1',
@@ -115,6 +118,25 @@ const Chatbot = forwardRef<ChatbotRef>((props, ref) => {
     }
   }, [isOpen]);
 
+  // Check authentication status on mount
+  useEffect(() => {
+    checkAuthStatus();
+  }, []);
+
+  const checkAuthStatus = async () => {
+    try {
+      const response = await fetch('https://huzaifa1102-better-auth.hf.space/api/auth/session', {
+        credentials: 'include',
+      });
+      if (response.ok) {
+        const data = await response.json();
+        setIsAuthenticated(!!data.user);
+      }
+    } catch (error) {
+      console.error('Auth check failed:', error);
+    }
+  };
+
   const handleKeyPress = (e: React.KeyboardEvent) => {
     if (e.key === 'Enter' && !e.shiftKey) {
       e.preventDefault();
@@ -139,6 +161,12 @@ const Chatbot = forwardRef<ChatbotRef>((props, ref) => {
   const sendQuery = async (query?: string) => {
     const messageText = query || inputValue;
     if (!messageText.trim()) return;
+
+    // Check authentication before sending
+    if (!isAuthenticated) {
+      setShowAuthModal(true);
+      return;
+    }
 
     const userMessage: Message = {
       id: Date.now().toString(),
@@ -262,24 +290,54 @@ const Chatbot = forwardRef<ChatbotRef>((props, ref) => {
               </p>
             </div>
           </div>
-          <button
-            className={styles.closeButton}
-            onClick={() => setIsOpen(false)}
-            aria-label="Close chatbot"
-          >
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              viewBox="0 0 24 24"
-              fill="none"
-              stroke="currentColor"
-              strokeWidth="2"
-              strokeLinecap="round"
-              strokeLinejoin="round"
+          <div style={{ display: 'flex', gap: '8px', alignItems: 'center' }}>
+            {!isAuthenticated && (
+              <button 
+                onClick={() => setShowAuthModal(true)}
+                style={{
+                  background: 'rgba(255, 255, 255, 0.2)',
+                  border: 'none',
+                  color: 'white',
+                  padding: '6px 12px',
+                  borderRadius: '20px',
+                  fontSize: '12px',
+                  fontWeight: 600,
+                  cursor: 'pointer',
+                  backdropFilter: 'blur(10px)',
+                  transition: 'all 0.2s ease',
+                  boxShadow: '0 2px 8px rgba(0,0,0,0.1)'
+                }}
+                onMouseOver={(e) => {
+                  e.currentTarget.style.background = 'rgba(255, 255, 255, 0.3)';
+                  e.currentTarget.style.transform = 'translateY(-1px)';
+                }}
+                onMouseOut={(e) => {
+                  e.currentTarget.style.background = 'rgba(255, 255, 255, 0.2)';
+                  e.currentTarget.style.transform = 'translateY(0)';
+                }}
+              >
+                Sign In
+              </button>
+            )}
+            <button
+              className={styles.closeButton}
+              onClick={() => setIsOpen(false)}
+              aria-label="Close chatbot"
             >
-              <line x1="18" y1="6" x2="6" y2="18"></line>
-              <line x1="6" y1="6" x2="18" y2="18"></line>
-            </svg>
-          </button>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                strokeWidth="2"
+                strokeLinecap="round"
+                strokeLinejoin="round"
+              >
+                <line x1="18" y1="6" x2="6" y2="18"></line>
+                <line x1="6" y1="6" x2="18" y2="18"></line>
+              </svg>
+            </button>
+          </div>
         </div>
 
         {/* Messages Container */}
@@ -369,6 +427,15 @@ const Chatbot = forwardRef<ChatbotRef>((props, ref) => {
           <div ref={messagesEndRef} />
         </div>
 
+        {/* Auth Prompt for Unauthenticated Users */}
+        {!isAuthenticated && (
+          <div className={styles.authPrompt}>
+            <button className={styles.authPromptButton} onClick={() => setShowAuthModal(true)}>
+              Sign In
+            </button>
+          </div>
+        )}
+
         {/* Input Area */}
         <div className={styles.inputContainer}>
           <input
@@ -401,6 +468,16 @@ const Chatbot = forwardRef<ChatbotRef>((props, ref) => {
           </button>
         </div>
       </div>
+
+      {/* Auth Modal */}
+      <AuthModal 
+        isOpen={showAuthModal} 
+        onClose={() => setShowAuthModal(false)}
+        onSuccess={() => {
+          setIsAuthenticated(true);
+          setShowAuthModal(false);
+        }}
+      />
     </>
   );
 });
