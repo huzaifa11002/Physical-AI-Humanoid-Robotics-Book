@@ -12,5 +12,15 @@ export const auth = betterAuth({
         enabled: true,
     },
     trustedOrigins: ["http://localhost:3000", "https://physical-ai-humanoid-robotics-book-bice.vercel.app/"],
+    advanced: {
+        cookies: {
+            sessionToken: {
+                attributes: {
+                    secure: true,
+                    sameSite: "none",
+                },
+            },
+        },
+    },
     // Add other providers or plugins here if needed
 });

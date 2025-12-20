@@ -3,6 +3,7 @@ import ReactMarkdown from 'react-markdown';
 import remarkGfm from 'remark-gfm';
 import rehypeHighlight from 'rehype-highlight';
 import AuthModal from '../AuthModal';
+import { authClient } from '../../lib/auth-client';
 import styles from './styles.module.css';
 
 interface Message {
@@ -291,7 +292,7 @@ const Chatbot = forwardRef<ChatbotRef>((props, ref) => {
             </div>
           </div>
           <div style={{ display: 'flex', gap: '8px', alignItems: 'center' }}>
-            {!isAuthenticated && (
+            {!isAuthenticated ? (
               <button 
                 onClick={() => setShowAuthModal(true)}
                 style={{
@@ -317,6 +318,37 @@ const Chatbot = forwardRef<ChatbotRef>((props, ref) => {
                 }}
               >
                 Sign In
+              </button>
+            ) : (
+              <button 
+                onClick={async () => {
+                  await authClient.signOut();
+                  setIsAuthenticated(false);
+                  window.location.reload(); // Reload to clear state
+                }}
+                style={{
+                  background: 'rgba(255, 59, 48, 0.2)', // Red tint for logout
+                  border: 'none',
+                  color: 'white',
+                  padding: '6px 12px',
+                  borderRadius: '20px',
+                  fontSize: '12px',
+                  fontWeight: 600,
+                  cursor: 'pointer',
+                  backdropFilter: 'blur(10px)',
+                  transition: 'all 0.2s ease',
+                  boxShadow: '0 2px 8px rgba(0,0,0,0.1)'
+                }}
+                onMouseOver={(e) => {
+                  e.currentTarget.style.background = 'rgba(255, 59, 48, 0.4)';
+                  e.currentTarget.style.transform = 'translateY(-1px)';
+                }}
+                onMouseOut={(e) => {
+                  e.currentTarget.style.background = 'rgba(255, 59, 48, 0.2)';
+                  e.currentTarget.style.transform = 'translateY(0)';
+                }}
+              >
+                Logout
               </button>
             )}
             <button
